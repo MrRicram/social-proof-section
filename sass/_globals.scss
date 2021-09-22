@@ -12,6 +12,7 @@ html {
 body {
     font-family: 'Spartan', sans-serif;
     font-weight: 400;
+    line-height: 1.8;
     color: $vrdarkmagenta;
     background: url(../images/bg-pattern-top-mobile.svg) top no-repeat, url(../images/bg-pattern-bottom-mobile.svg) bottom no-repeat;
     background-size: 100%;
@@ -51,38 +52,101 @@ main {
                 margin-top: 1.5rem;
             }
         }
-    }
 
-    .ratings {
-        margin-top: 3rem;
-
-        .review {
-            // height: 5.2rem;
-            // width: 21.8rem;
-            border-radius: 0.33rem;
-            background: $lightgrymagenta;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-
-            &:not(:last-child) { 
-                margin-bottom: 1rem;
-            }
-
-            .stars {
-                margin: 1rem 0;
-
-                img {
-                    margin: 0 0.3rem;
+        .ratings {
+            margin-top: 3rem;
+    
+            .review {
+                border-radius: 0.66rem;
+                background: $lightgrymagenta;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+    
+                &:not(:last-child) { 
+                    margin-bottom: 1rem;
+                }
+    
+                .stars {
+                    margin: 1rem 0;
+                    display: flex;
+                    justify-content: inherit;
+                    align-items: center;
+    
+                    img {
+                        margin: 0 0.3rem;
+                    }
+                }
+    
+                p {
+                    margin-bottom: 1rem;
+                    font-weight: 700;
+                    color: $vrdarkmagenta;
                 }
             }
+        }
+    }
 
-            p {
-                margin-bottom: 1rem;
-                font-weight: 700;
-                color: $vrdarkmagenta;
+    .bottom-half {
+        margin-top: 3.0625rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+
+        .testemonial-card {
+            background: $vrdarkmagenta;
+            border-radius: 0.667rem;
+
+            &:not(:last-child) {
+                margin-bottom: 1.0667rem;
             }
+
+            &:last-child {
+                margin-bottom: 6.667rem;
+            }
+
+            .info {
+                padding: 2.5rem 2rem 2.125rem;
+
+                .profile {
+                    display: flex;
+                    flex-direction: row;
+                    line-height: 1.5;
+                    margin-bottom: 1.867rem;
+                    
+    
+                    img {
+                        border-radius: 50%;
+                        height: 2.8rem;
+                        width: 2.8rem;                        
+                    }
+    
+                    .details {
+                        display: flex;
+                        flex-direction: column;
+                        margin-left: 1.533rem;
+
+                        p {
+                            &.name {
+                                color: $white;
+                                font-weight: 700;
+                            }
+            
+                            &.verif-buyer {
+                                color: $softpink;
+                            }
+                        }
+                    }
+                    
+                }
+
+                .description {
+                    color: $lightgrymagenta;
+                    text-align: left;
+                }
+            }    
         }
     }
 }

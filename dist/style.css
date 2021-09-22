@@ -14,6 +14,7 @@ html {
 body {
   font-family: 'Spartan', sans-serif;
   font-weight: 400;
+  line-height: 1.8;
   color: #502050;
   background: url(../images/bg-pattern-top-mobile.svg) top no-repeat, url(../images/bg-pattern-bottom-mobile.svg) bottom no-repeat;
   background-size: 100%;
@@ -62,12 +63,12 @@ main .upper-half .intro p {
   margin-top: 1.5rem;
 }
 
-main .ratings {
+main .upper-half .ratings {
   margin-top: 3rem;
 }
 
-main .ratings .review {
-  border-radius: 0.33rem;
+main .upper-half .ratings .review {
+  border-radius: 0.66rem;
   background: #f7f2f7;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -84,21 +85,104 @@ main .ratings .review {
           align-items: center;
 }
 
-main .ratings .review:not(:last-child) {
+main .upper-half .ratings .review:not(:last-child) {
   margin-bottom: 1rem;
 }
 
-main .ratings .review .stars {
+main .upper-half .ratings .review .stars {
   margin: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: inherit;
+      -ms-flex-pack: inherit;
+          justify-content: inherit;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-main .ratings .review .stars img {
+main .upper-half .ratings .review .stars img {
   margin: 0 0.3rem;
 }
 
-main .ratings .review p {
+main .upper-half .ratings .review p {
   margin-bottom: 1rem;
   font-weight: 700;
   color: #502050;
+}
+
+main .bottom-half {
+  margin-top: 3.0625rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .bottom-half .testemonial-card {
+  background: #502050;
+  border-radius: 0.667rem;
+}
+
+main .bottom-half .testemonial-card:not(:last-child) {
+  margin-bottom: 1.0667rem;
+}
+
+main .bottom-half .testemonial-card:last-child {
+  margin-bottom: 6.667rem;
+}
+
+main .bottom-half .testemonial-card .info {
+  padding: 2.5rem 2rem 2.125rem;
+}
+
+main .bottom-half .testemonial-card .info .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  line-height: 1.5;
+  margin-bottom: 1.867rem;
+}
+
+main .bottom-half .testemonial-card .info .profile img {
+  border-radius: 50%;
+  height: 2.8rem;
+  width: 2.8rem;
+}
+
+main .bottom-half .testemonial-card .info .profile .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 1.533rem;
+}
+
+main .bottom-half .testemonial-card .info .profile .details p.name {
+  color: white;
+  font-weight: 700;
+}
+
+main .bottom-half .testemonial-card .info .profile .details p.verif-buyer {
+  color: #ee68a4;
+}
+
+main .bottom-half .testemonial-card .info .description {
+  color: #f7f2f7;
+  text-align: left;
 }
 /*# sourceMappingURL=style.css.map */
