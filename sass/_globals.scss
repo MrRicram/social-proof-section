@@ -151,3 +151,24 @@ main {
     }
 }
 
+footer {
+    position: relative;
+    bottom: 0;
+
+    .attribution {
+        color: $darkgrymagenta;
+        text-align: center;
+        font-size: 0.75em;
+        margin-bottom: 10px;
+    }
+    
+    .attribution a {
+        text-decoration: none;
+        color: $vrdarkmagenta;
+        font-weight: bold;
+    }  
+    
+    .attribution a:hover {
+      color: $softpink;
+    }
+}

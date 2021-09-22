@@ -185,4 +185,26 @@ main .bottom-half .testemonial-card .info .description {
   color: #f7f2f7;
   text-align: left;
 }
+
+footer {
+  position: relative;
+  bottom: 0;
+}
+
+footer .attribution {
+  color: #937b92;
+  text-align: center;
+  font-size: 0.75em;
+  margin-bottom: 10px;
+}
+
+footer .attribution a {
+  text-decoration: none;
+  color: #502050;
+  font-weight: bold;
+}
+
+footer .attribution a:hover {
+  color: #ee68a4;
+}
 /*# sourceMappingURL=style.css.map */
