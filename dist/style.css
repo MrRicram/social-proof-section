@@ -27,15 +27,78 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
 }
 
-main h1 {
+main > * {
+  margin: 0 1.5rem;
+  max-width: 35rem;
+}
+
+main .upper-half {
+  text-align: center;
+  margin-top: 5.33rem;
+}
+
+main .upper-half .intro h1 {
   font-weight: 700;
+  font-size: 2rem;
   color: #502050;
+  line-height: 1;
+  letter-spacing: -0.1rem;
 }
 
-main p {
+main .upper-half .intro p {
+  font-size: 0.907rem;
   color: #937b92;
   font-weight: 500;
+  line-height: 1.6;
+  margin-top: 1.5rem;
+}
+
+main .ratings {
+  margin-top: 3rem;
+}
+
+main .ratings .review {
+  border-radius: 0.33rem;
+  background: #f7f2f7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .ratings .review:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+main .ratings .review .stars {
+  margin: 1rem 0;
+}
+
+main .ratings .review .stars img {
+  margin: 0 0.3rem;
+}
+
+main .ratings .review p {
+  margin-bottom: 1rem;
+  font-weight: 700;
+  color: #502050;
 }
 /*# sourceMappingURL=style.css.map */
