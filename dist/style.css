@@ -207,4 +207,91 @@ footer .attribution a {
 footer .attribution a:hover {
   color: #ee68a4;
 }
+
+@media only screen and (min-width: 54rem) {
+  body {
+    background: url(../images/bg-pattern-top-desktop.svg) top no-repeat, url(../images/bg-pattern-bottom-desktop.svg) bottom no-repeat;
+    background-size: 100%;
+  }
+  main > * {
+    margin: 0 10.8667rem;
+    max-width: 75rem;
+  }
+  main .upper-half {
+    margin-top: 8.533rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: left;
+  }
+  main .upper-half .intro {
+    max-width: 48.47%;
+    margin-right: 6.25rem;
+  }
+  main .upper-half .intro h1 {
+    font-size: 3.05rem;
+  }
+  main .upper-half .ratings {
+    width: 100%;
+    margin: 0;
+    margin-left: 3.1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .upper-half .ratings > * {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .upper-half .ratings .review {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .upper-half .ratings .review:first-child {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-top: 0.926rem;
+  }
+  main .upper-half .ratings .review:last-child {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  main .upper-half .ratings .review .stars {
+    margin: 1.25rem 0 1.25rem 1.75rem;
+  }
+  main .upper-half .ratings .review p {
+    margin: unset;
+    min-width: 20ch;
+    margin: 0 2.8rem 0 1.1rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */
