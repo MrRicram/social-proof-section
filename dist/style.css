@@ -16,7 +16,7 @@ body {
   font-weight: 400;
   line-height: 1.8;
   color: #502050;
-  background: url(../images/bg-pattern-top-mobile.svg) top no-repeat, url(../images/bg-pattern-bottom-mobile.svg) bottom no-repeat;
+  background: url(../images/bg-pattern-top-mobile.svg) left top no-repeat, url(../images/bg-pattern-bottom-mobile.svg) right bottom no-repeat;
   background-size: 100%;
 }
 
@@ -112,8 +112,33 @@ main .upper-half .ratings .review p {
   color: #502050;
 }
 
-main .bottom-half {
-  margin-top: 3.0625rem;
+main .lower-half {
+  margin-top: 3.2667rem;
+  margin-bottom: 6.6rem;
+  font-size: 0.825rem;
+}
+
+main .lower-half .users > * {
+  background-color: #502050;
+  margin-top: 1rem;
+  border-radius: 0.667rem;
+  color: #f7f2f7;
+  padding: 2.5rem 2rem 2.125rem;
+}
+
+main .lower-half .users .user .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 1.5;
+}
+
+main .lower-half .users .user .profile img {
+  border-radius: 50%;
+  width: 42px;
+}
+
+main .lower-half .users .user .profile .details {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -124,66 +149,20 @@ main .bottom-half {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-left: 1.6rem;
 }
 
-main .bottom-half .testemonial-card {
-  background: #502050;
-  border-radius: 0.667rem;
-}
-
-main .bottom-half .testemonial-card:not(:last-child) {
-  margin-bottom: 1.0667rem;
-}
-
-main .bottom-half .testemonial-card:last-child {
-  margin-bottom: 6.667rem;
-}
-
-main .bottom-half .testemonial-card .info {
-  padding: 2.5rem 2rem 2.125rem;
-}
-
-main .bottom-half .testemonial-card .info .profile {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  line-height: 1.5;
-  margin-bottom: 1.867rem;
-}
-
-main .bottom-half .testemonial-card .info .profile img {
-  border-radius: 50%;
-  height: 2.8rem;
-  width: 2.8rem;
-}
-
-main .bottom-half .testemonial-card .info .profile .details {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-left: 1.533rem;
-}
-
-main .bottom-half .testemonial-card .info .profile .details p.name {
+main .lower-half .users .user .profile .details .name {
   color: white;
   font-weight: 700;
 }
 
-main .bottom-half .testemonial-card .info .profile .details p.verif-buyer {
+main .lower-half .users .user .profile .details .verif-buyer {
   color: #ee68a4;
 }
 
-main .bottom-half .testemonial-card .info .description {
-  color: #f7f2f7;
-  text-align: left;
+main .lower-half .users .user .quote {
+  margin-top: 2rem;
 }
 
 footer {
@@ -208,10 +187,10 @@ footer .attribution a:hover {
   color: #ee68a4;
 }
 
-@media only screen and (min-width: 54rem) {
+@media only screen and (min-width: 90em) {
   body {
-    background: url(../images/bg-pattern-top-desktop.svg) top no-repeat, url(../images/bg-pattern-bottom-desktop.svg) bottom no-repeat;
-    background-size: 100%;
+    background: url(../images/bg-pattern-top-desktop.svg) left top no-repeat, url(../images/bg-pattern-bottom-desktop.svg) right bottom no-repeat;
+    background-size: 40.5%, 78.5%;
   }
   main > * {
     margin: 0 10.8667rem;
@@ -292,6 +271,32 @@ footer .attribution a:hover {
     margin: unset;
     min-width: 20ch;
     margin: 0 2.8rem 0 1.1rem;
+  }
+  main .lower-half {
+    margin-top: 4.933rem;
+    height: 18rem;
+  }
+  main .lower-half .users {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-column-gap: 2rem;
+            column-gap: 2rem;
+    height: 100%;
+  }
+  main .lower-half .users > * {
+    margin-top: unset;
+  }
+  main .lower-half .users .user:first-child {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  main .lower-half .users .user:last-child {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
   }
 }
 /*# sourceMappingURL=style.css.map */

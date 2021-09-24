@@ -14,7 +14,7 @@ body {
     font-weight: 400;
     line-height: 1.8;
     color: $vrdarkmagenta;
-    background: url(../images/bg-pattern-top-mobile.svg) top no-repeat, url(../images/bg-pattern-bottom-mobile.svg) bottom no-repeat;
+    background: url(../images/bg-pattern-top-mobile.svg) left top no-repeat, url(../images/bg-pattern-bottom-mobile.svg) right bottom no-repeat;
     background-size: 100%;
 }
 
@@ -88,65 +88,51 @@ main {
         }
     }
 
-    .bottom-half {
-        margin-top: 3.0625rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        
+    .lower-half {
+        margin-top: 3.2667rem;
+        margin-bottom: 6.6rem;
+        font-size: 0.825rem;
 
-        .testemonial-card {
-            background: $vrdarkmagenta;
-            border-radius: 0.667rem;
-
-            &:not(:last-child) {
-                margin-bottom: 1.0667rem;
-            }
-
-            &:last-child {
-                margin-bottom: 6.667rem;
-            }
-
-            .info {
+        .users {
+            > * {
+                background-color: $vrdarkmagenta;
+                margin-top: 1rem;
+                border-radius: 0.667rem;
+                color: $lightgrymagenta;
                 padding: 2.5rem 2rem 2.125rem;
+            }
 
+            .user {
                 .profile {
                     display: flex;
-                    flex-direction: row;
                     line-height: 1.5;
-                    margin-bottom: 1.867rem;
-                    
-    
+
                     img {
                         border-radius: 50%;
-                        height: 2.8rem;
-                        width: 2.8rem;                        
+                        width: 42px;
                     }
-    
+
                     .details {
                         display: flex;
                         flex-direction: column;
-                        margin-left: 1.533rem;
+                        justify-content: center;
+                        margin-left: 1.6rem;
 
-                        p {
-                            &.name {
-                                color: $white;
-                                font-weight: 700;
-                            }
-            
-                            &.verif-buyer {
-                                color: $softpink;
-                            }
+                        .name {
+                            color: $white;
+                            font-weight: 700;
+                        }
+
+                        .verif-buyer {
+                            color: $softpink;
                         }
                     }
-                    
                 }
 
-                .description {
-                    color: $lightgrymagenta;
-                    text-align: left;
+                .quote {
+                    margin-top: 2rem;
                 }
-            }    
+            }
         }
     }
 }
